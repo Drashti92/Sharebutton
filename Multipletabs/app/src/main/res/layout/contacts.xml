@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contactsLayout">
+
+    <TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:background="@android:color/holo_blue_light">
+    <TableRow android:textAlignment="center">
+        <TextView 
+            android:text="Name:"
+            android:width ="150px"
+            android:textColor="#f7f1f1"
+            android:textSize="25dp" />
+        <EditText 
+            android:id="@+id/txtname" 
+            android:width="170px"
+            android:layout_width="fill_parent" />
+    </TableRow> 
+     
+    <TableRow android:textAlignment="center">
+        <TextView 
+            android:text="Sex:"
+            android:textColor="#f7f1f1"
+            android:textSize="25dp" />
+        <RadioGroup
+            android:id="@+id/QueGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female" />
+
+        </RadioGroup>
+
+    </TableRow>
+    
+    
+    <TableRow android:textAlignment="center">
+        <TextView 
+            android:text="Phone:"
+            android:textColor="#f7f1f1"
+            android:textSize="25dp" />
+        <EditText 
+            android:id="@+id/txtphone" 
+            android:password="false" 
+            />
+    </TableRow>
+    
+    <TableRow android:textAlignment="center">
+        <TextView 
+            android:text="Email:"
+            android:textColor="#f7f1f1"
+            android:textSize="25dp" />
+        <EditText 
+            android:id="@+id/txtemail" 
+            android:password="false" 
+            />
+    </TableRow>
+    
+    <TableRow android:textAlignment="center">
+        <TextView 
+            android:text="Postal Address:"
+            android:textColor="#f7f1f1"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/txtpostaladdress"
+            android:password="false"
+            />
+    </TableRow>
+        
+    <TableRow>
+        <TextView />
+        <TextView />
+    </TableRow>
+     
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/buttonsend"
+            android:text="Send to Friends"
+            android:textStyle="bold"
+            android:layout_column="0"
+            android:background="#ffffff"
+            android:layout_span="2" />
+    </TableRow>
+    
+    </TableLayout> 
+
+
+
+
+
+
+
+</LinearLayout>
